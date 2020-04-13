@@ -1,0 +1,35 @@
+.feedback {
+    padding-bottom: 71px;
+    &__wrapper {
+        margin-top: 70px;
+    }
+    &__item {
+        display: flex;
+        &_margin {
+            margin-top: 100px;
+            margin-bottom: 102px;
+        }
+    }
+    
+    &__photo {
+        img {
+        display: block;
+        margin: 0 auto;
+        }
+    }
+   &__descr {
+       margin-left: 61px;
+       span {
+           color: #646464;
+           margin-bottom: 19px;
+           font-size: 14px;
+           font-weight: 300; 
+           display: block;
+       }
+       p {
+        font-size: 16px;
+        font-weight: 300;
+        color: $black-color;
+       }
+    }
+}
