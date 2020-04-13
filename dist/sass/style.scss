@@ -1,0 +1,28 @@
+@import "libs/bootstrap-reboot.min.scss";
+@import "libs/fonts.scss";
+@import "libs/animate.scss";
+@import "base/_variables";
+@import "base/_mixins";
+* {
+    font-family: "Museo Sanc Cyrl", sans-serif;
+}
+
+.container {
+    position: relative;
+    max-width: 950px;
+    margin: 0 auto;  
+}
+@import "block/_promo";
+@import "block/_header";
+@import "block/_button";
+@import "block/_advantages";
+@import "block/consultation";
+@import "block/_title";
+@import "block/_forms";
+@import "block/_carousel";
+@import "block/_catalog";
+@import "block/_feedback";
+@import "block/_footer";
+@import "block/_modal";
+@import "block/_pageup";
+@import "base/media";
