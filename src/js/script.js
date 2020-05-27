@@ -9,7 +9,7 @@ const slider = tns({
     nav: false,
     responsive: {
         575: {
-        arrowKeys: false,
+        arrowKeys: true,
         nav: true,
         },
     },

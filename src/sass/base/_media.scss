@@ -5,7 +5,7 @@
             display: block;
             margin: 0 auto;
             max-width: 700px;
-             }
+            }
         }
     .next {
         right: 10px;
@@ -21,6 +21,7 @@
 }
 .pageup {
     right: 50px;
+    }
 }
 @media (max-width: 767px) {
  .promo {
@@ -46,8 +47,8 @@
 }
 .consultation {
     .title_left {
-    text-align: center;
-    font-size: 29px;
+        text-align: center;
+        font-size: 29px;
     }
     &__descr {
     text-align: center;
@@ -66,13 +67,22 @@
     }
 .pageup {
     right: 30px;
+    }
 }
+@media (max-width: 708px) {
+    .catalog__content {
+        justify-content: center;
+    }
+    .feedback {
+        &__item {
+            width: 90%;
+            margin: 0 auto;
+            margin-top: 35px;
+        }
+    }
 }  
 @media (max-width: 575px) {
-    .container {
-        width: 100%;
-    }
-    .header{
+    .header {
         flex-wrap: wrap;
         justify-content: space-evenly;
         &__logo {
@@ -94,16 +104,19 @@
         }
     }
     .promo {
-        background: url('../img/main.jpg') left (ce/cover) no-repeat;
+        background: url('../img/main-min.jpg') center (center/cover) repeat;
         .button_main {
             margin: 0 auto;
             margin-top: 45px;
             }
+        &__wrapper {      
+            align-items: center;  
+        }
         &__header {
             font-size: 32px;
             font-weight: 400;
             line-height: 32px;
-            text-align: left;
+            text-align: center;
             margin: 0 auto;
         }
         &__subheader {
@@ -129,27 +142,17 @@
                 margin-bottom: 10px;
                 text-align: center;
             }
-    }  
-}
-    .consultation {
-        &__descr {
-            width: 396px;
-            margin: 0 auto;
-            text-align: center;
-        }
-        h2  {
-            text-align: center;
-        }
-        .feed-form {
-        margin-left: 50%;
-        transform: translateX(-50%);
-        }
+        }  
     }
-    .feed-form {
-        label.error {
+    .consultation {    
+        &__descr {
+            text-align: center; 
+            width: auto;
+            font-size: 16px;
+        }
+        .title.title_left {
             text-align: center;
-            margin-bottom: 20px;
-            max-width: 250px;
+            font-size: 20px;
         }
     }
     
@@ -166,6 +169,7 @@
         position: relative;
         display: block;
     .tns-nav {
+        display: block;
         position: absolute;
         bottom: -20px;
         left: 50%;
@@ -186,12 +190,13 @@
     }
     .catalog {
         &__tab {
-            font-size: 14px;
-            line-height: 14px;
+            font-size: 12px;
+            width: 110px;
             div {
-                padding-top: 15px;
-                padding-right: 7px;
                 text-align: center;
+                width: 100%;
+                padding-top: 15px;
+                line-height: 9px;
             }
         }
         &__content {
@@ -225,6 +230,11 @@
             }
         }
     }
+    .footer__info {
+        width: 320px;
+        padding: 0;
+        padding-top: 15px;
+    }
     .overlay {
         .modal {
             width: 300px;
@@ -234,8 +244,63 @@
             }
             input, button {
                 width: 250px;
-                }
+            }
         }
     }
 }
+@media (max-width: 440px) {
+    .promo {
+        &__wrapper {
+            margin-top: 35px;      
+        }
+        &__header {
+            font-size: 28px;
+        }
+        &__icons {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+    }
+
 }
+@media (max-width: 390px) {
+    .catalog {
+        &__tab {
+            font-size: 10px;
+            width: 100px;
+        }
+    }
+}
+@media (max-width: 380px) {
+    .header {
+        flex-direction: column;
+        justify-content: space-between;
+        height: 140px;
+        img {
+            width: 110%;
+            height: 110%;
+            object-fit: cover;
+            
+        }
+        &__phone {
+            display: none;
+        }
+        button {
+            display: none;
+        }
+    }
+    
+        &__wrapper {
+            margin: 0 auto;
+            margin-top: 25px;
+        }
+        &__icons {
+            width: 100%;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 25px;
+        }
+    }
